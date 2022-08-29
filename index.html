@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="estilos/style.css">
+
+        <title>Primera PreEntrega Proyecto Final</title>
+    </head>
+    <body>
+
+        <main class="container-fluid text-center">
+                
+            <h1>Conversor de Unidades de Medida para Pastelería</h1>
+
+            
+                
+            <form id="conversor">
+                <div class="row justify-content-center mt-5 mb-3">
+                    <h4>¿Qué ingrediente vas a usar?</h4>
+
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label for="ingredientes" class="col-2 col-form-label">Ingrediente</label>
+                            <div class="col-10">
+                                <select id="ingredientes" class="form-select">
+                                    <option selected>Seleccionar</option>
+                                    <option value="flour">Harina</option>
+                                    <option value="sugar">Azucar</option>
+                                    <option value="butter">Manteca</option>
+                                    <option value="water">Líquido</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mt-5 mb-4">
+                    <h4>¿Qué necesitas convertir?</h4>
+
+                    <div class="col-md-4">
+                        <div class="form-group row">
+                            <label for="cantidadInicial" class="col-2 col-form-label">Cantidad</label>
+                            <div class="col-10">
+                                <input type="number" id="cantidadInicial" class="form-control"> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="form-group row">
+                            <label for="unidadInicial" class="col-2 col-form-label">Unidad</label>
+                            <div class="col-10">
+                                <select id="unidadInicial" class="form-select">
+                                    <option selected>Convertir de...</option>
+                                    <option value="grams" label="Gramos">Gramos</option>
+                                    <option value="milliliters" class="ml">Mililitros</option>
+                                    <option value="cups" class="tz">Tazas</option>
+                                    <option value="oz" class="oz">Onzas</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mt-5 mb-3">
+                    <h4>¿A qué unidad lo querés pasar?</h4>
+
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label for="unidadFinal" class="col-2 col-form-label">Unidad</label>
+                            <div class="col-10">
+                                <select id="unidadFinal" class="form-select">
+                                    <option selected>Convertir a...</option>
+                                    <option value="grams">Gramos</option>
+                                    <option value="milliliters">Mililitros</option>
+                                    <option value="cups">Tazas</option>
+                                    <option value="oz">Onzas</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <input type="submit" class="btn btn-primary" value="Convertir"></input>
+                </div>
+            </form>
+            
+            <article class="col-12 mt-5" id="resultados">
+                <h3>Última Consulta</h3>
+                <div class="ultimoResultado"></div>
+            </article>
+
+            <article class="col-12 mt-5" id="historial">
+                <h3>Historial de Resultados</h3>
+                <input type="button" value="Borrar Historial" id="borrarHistorial">
+            </article>
+
+        </main>
+
+        <script src="scripts/luxon.min.js"></script>
+        <script src="scripts/script.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
