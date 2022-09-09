@@ -5,7 +5,7 @@ const DateTime = luxon.DateTime
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '9f395de39cmsh265366f06f1faa2p164201jsn60af8a77cc35',
+		'X-RapidAPI-Key': 'usar una key',
 		'X-RapidAPI-Host': 'food-unit-of-measurement-converter.p.rapidapi.com'
 	}
 }
